@@ -32,6 +32,8 @@ micro.budget_constraint_graph(budget, pizza, gum)
 plt.show() # Show the graph
 ```
 
+![Budget Constraint](https://github.com/Archaversine/PyMicroEcon/blob/main/images/budget_constraints_1.png)
+
 If inside a jupyter notebook, use `%matplotlib inline` without `plt.show()`.
 
 The budget constraint graph also supports multiple curves. For example, to show the graph
@@ -48,3 +50,5 @@ budgets = 10, 12
 micro.budget_constraint_graph(budget, pizza, gum)
 plt.show()
 ```
+
+![Budget Constraint](https://github.com/Archaversine/PyMicroEcon/blob/main/images/budget_constraints_2.png)
