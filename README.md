@@ -47,7 +47,7 @@ pizza = micro.Good("Pizza", 2)
 gum = micro.Good("Gum", 0.5)
 budgets = 10, 12
 
-micro.budget_constraint_graph(budget, pizza, gum)
+micro.budget_constraint_graph(budgets, pizza, gum)
 plt.show()
 ```
 
