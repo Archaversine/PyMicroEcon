@@ -52,3 +52,32 @@ plt.show()
 ```
 
 ![Budget Constraint](https://github.com/Archaversine/PyMicroEcon/blob/main/images/budget_constraints_2.png)
+
+### Graphing Supply and Demand
+
+To make a supply and demand graph, only two things are needed: two functions where p (price) is the 
+independent variable each for supply and demand.
+
+For example, assumne quantity demanded is given by the equation `16 - 2p` (where `p` is price) and 
+quantity supplied is given by the equation `2 + 5p` (where `p` is price).
+
+These can be represented using the `LinearFunc` class. To create a `LinearFunc` with the equation
+`a * p + b` (where `p` is the independent variable price) simply use `LinearFunc(a, b)`.
+
+The quantity demanded equation (`16 - 2p`) can be rewritten as (`-2 * p + 16`), which can then be 
+represented in code as: `LinearFunc(-2, 16)`.
+
+So for the following example the supply and demand graph can be generated with the following code:
+
+```py
+import microeconomics as micro
+import matplotlib.pyplot as plt
+
+quantity_demanded = micro.LinearFunc(-2, 16) # Qd = -2p + 16
+quantity_supplied = micro.LinearFunc(5, 2)   # Qs = 5p + 2
+
+micro.supply_demand_graph(quantity_supplied, quantity_demanded)
+plt.show()
+```
+
+![Supply and Demand Graph](https://github.com/Archaversine/PyMicroEcon/blob/main/images/supply_demand_graph.png)
