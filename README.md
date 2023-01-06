@@ -43,8 +43,8 @@ for both of the budgets $10.00 and $12.00 with the same goods, use the following
 import microeconomics as micro
 import matplotlib.pyplot as plt
 
-pizza = micro.Good("Pizza", 2)
-gum = micro.Good("Gum", 0.5)
+pizza = micro.Good("Pizza", price = 2)
+gum = micro.Good("Gum", price = 0.5)
 budgets = 10, 12
 
 micro.budget_constraint_graph(budgets, pizza, gum)
